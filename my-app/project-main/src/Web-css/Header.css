@@ -1,0 +1,179 @@
+/* Header.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+  background-color: #282c34;
+  color: white;
+}
+
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-link {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+}
+
+body.dark-mode .navbar {
+  background-color: #1c1f24;
+}
+
+body.dark-mode .nav-link {
+  color: #fff !important;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #61dafb !important;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #61dafb;
+  color: #61dafb;
+}
+
+body.dark-mode .btn-outline-light:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #61dafb;
+  border-color: #61dafb;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #21a1f1;
+  border-color: #21a1f1;
+}
+
+/* Apply light mode styles for all elements */
+body.light-mode .navbar {
+  background-color: #f8f9fa;
+}
+
+body.light-mode .nav-link {
+  color: #343a40 !important;
+}
+
+body.light-mode .nav-link:hover {
+  color: #007bff !important;
+}
+
+body.light-mode .btn-outline-dark {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+body.light-mode .btn-outline-dark:hover {
+  background-color: #007bff;
+  color: #f8f9fa;
+}
+
+body.light-mode .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+body.light-mode .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}

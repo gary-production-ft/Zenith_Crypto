@@ -1,0 +1,12 @@
+.crypto-detail-container {
+    padding: 2rem;
+  }
+  
+  .crypto-detail-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .chart-container {
+    margin-top: 2rem;
+  }

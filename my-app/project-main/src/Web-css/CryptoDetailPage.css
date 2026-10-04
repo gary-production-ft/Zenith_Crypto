@@ -1,0 +1,20 @@
+.crypto-detail-container {
+    padding: 2rem;
+    background-color: #2c2f33;
+    color: #ffffff;
+}
+
+.crypto-detail-card {
+    background-color: #1e2124;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.crypto-detail-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.crypto-detail-card p {
+    margin: 0.5rem 0;
+}
